@@ -14,5 +14,12 @@ CHIP Or {
     OUT out;
 
     PARTS:
-    // Put your code here:
-}
+ if (a == 1 || b == 1)
+{
+    out = 1
+     }   
+        else
+    {
+        out = 0
+    }
+        }
