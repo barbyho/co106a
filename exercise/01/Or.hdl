@@ -14,12 +14,7 @@ CHIP Or {
     OUT out;
 
     PARTS:
- if (a == 1 || b == 1)
-{
-    out = 1
-     }   
-        else
-    {
-        out = 0
-    }
-        }
+    Nand(a=a, b=a, out=nota);
+    Nand(a=b, b=b, out=notb);
+    Nand(a=nota, b=notb, out=out);
+}
